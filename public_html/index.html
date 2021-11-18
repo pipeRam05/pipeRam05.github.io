@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM05</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script> src = "js/bootstrap.min.js" </script>
+    <script> src = "http://code.jquery.com/jquery.js" </script>
+    <script src="js/sweetalert.min.js"></script>
+</head>
+<body>
+    <script>
+      function respuestasi() {
+        var nombre = document.getElementById("name1").value;
+        swal({
+            title: "Perfecto!",
+            text: "¿Quieres continuar?",
+            icon: "success",
+            buttons: [
+              'No',
+              'Si, continuar!'
+            ],
+            dangerMode: false,
+            width: '5%',
+          }).then(function(isConfirm) {
+            if (isConfirm) {
+              swal({
+                title: 'Muy bien '+nombre+', preparate para las preguntas!',
+                text: 'Buena suerte!'
+              }).then(function() {
+                window.location.href ="test1.html";
+                form.submit();
+              });
+            } else {
+              window.location.href ="index.html";
+            }
+          });
+      }
+  
+      function respuestano() {
+        var nombre = document.getElementById("name1").value;
+      }
+    </script>
+
+    <Form name="MyForm">
+      <center>
+        <h2><strong>
+            <font color= "#2632EF", size="5%" >¡BIENVENIDO!</font>
+          </strong></h2>
+          <h2><strong>
+            <font color="#2632EF", size="5%" > DESPEJA TU MENTE </font>
+          </strong></h2>
+        <img src="/img/prueba.jpg" class="rounded" width="30%" height="250" border="3px; color: black" align="center"><br><br>
+        <h3>Ingrese su nombre para participar:</h3>
+        <input type="text" name="texto" id="name1" size="30%" method="post" action=/form> <br><br>
+
+        <input type="button" id="botonSolo" value=" JUGAR " onclick="respuestasi()">
+        
+      </center>
+    </Form>
+    
+</body>
+</html>

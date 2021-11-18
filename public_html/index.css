@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaefd3 ;
+    width:100%;
+    max-height:auto;
+}
+
+.info {
+  width:80%;
+  height:auto;
+  margin: 1% auto;
+  padding: 1%;
+  background: #4d5185;
+  border-radius: 20px;
+  margin-bottom: 2.5%;
+}
+
+.info .e3 {
+  color: #eaefd3;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  font-weight: bolder;
+  border-bottom: 2px;
+}
+
+#boton{
+    text-decoration: none;
+    padding: 3%;
+    width: 45%;
+    height: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4d5185;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }
+
+#boton .value{
+    size: auto;
+  }
+
+  #botonSolo{
+    text-decoration: none;
+    padding: 0.7%;
+    max-height: auto;
+    margin-bottom: 1%;
+    font-weight: 750;
+    font-size: 110%;
+    color: #ffffff;
+    background-color: #2632EF;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }
+ 
+  #boton1{
+    text-decoration: none;
+    padding: 2%;
+    margin-bottom: 1%;
+    font-weight: 650;
+    font-size: 110%;
+    color: #ffffff;
+    background-color: #a1a3c2;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }
+  
+  #boton2{
+    text-decoration: none;
+    padding: 2%;
+    margin-bottom: 1%;
+    font-weight: 650;
+    font-size: 110%;
+    color: #ffffff;
+    background-color: #a1a3c2;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }
+
+  #boton3{
+    text-decoration: none;
+    padding: 2%;
+    margin-bottom: 1%;
+    font-weight: 650;
+    font-size: 110%;
+    color: #ffffff;
+    background-color: #a1a3c2;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }
+  
+  #boton4{
+    text-decoration: none;
+    padding: 2%;
+    margin-bottom: 0.5%;
+    font-weight: 650;
+    font-size: 110%;
+    color: #ffffff;
+    background-color: #a1a3c2;
+    border-radius: 12px;
+    border: 2px solid #0016b0;
+  }

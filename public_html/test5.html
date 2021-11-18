@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>RAM05</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script> src = "js/bootstrap.min.js" </script>
+  <script> src = "http://code.jquery.com/jquery.js" </script>
+  <script src="js/sweetalert.min.js"></script>
+  <!--FONT OSWALD y LOBSTER-->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function confirmar() {
+        var nombre = document.getElementById("name1").value;
+          if (nombre.toLowerCase() == "50"){
+            swal({
+            title: "¡ERES UN GENIO, DEBES SER ESTUDIANTE DE LA USCO!",
+            text: "Continuemos...",
+            icon: "success",
+            })
+            .then((value) => {
+              window.location.href ="test6.html";
+              });
+          }
+          else{
+            swal({
+              title: " INCORRECTO ",
+              text: "Ayuda: los parentesis pueden ser reemplazados por * ",
+              icon: "error",
+              width: '5%'})
+          }
+      
+    }
+
+    function respuestano() {
+      var nombre = document.getElementById("name1").value;
+      swal({
+          title: "¡Que mal!",
+          text: "Nos vemos en una próxima ocasión",
+          icon: "error",
+          width: '5%'})
+    }
+
+  </script>
+  
+  <Form name="MyForm">
+    <center>
+        <h2 class="titulo">¿ CREES SER CAPAZ DE ENCONTRAR LA RESPUESTA ?</h2>
+        <img src="/img/test5.jpg" class="rounded" width="250" height="250" border="0" align="center"><br><br>
+        <h3>¿Cuál es el resultado tras realizar las operaciones ?</h3>
+        <input type="text" name="texto" id="name1" method="post" action="/form" autocomplete="off" size="25"><br><br>
+
+        
+      <input type="button" id="botonSolo" value=" ENVIAR " onclick="confirmar()">
+      
+
+
+    </center>
+  </Form>
+</body>
+
+</html>

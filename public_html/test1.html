@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>RAM05</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script> src = "js/bootstrap.min.js" </script>
+  <script> src = "http://code.jquery.com/jquery.js" </script>
+  <script src="js/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <script>
+    function respuestasi() {
+      swal({
+        title: "¡¡CORRECTO!!",
+        text: "Muy bien, se nota que sabes de figuras. Probemos con la siguiente!",
+        icon: "success",
+        width: '5%'
+        }).then(function() {
+              window.location.href ="test2.html";
+              form.submit();
+            });
+    }
+
+    function respuestano() {
+      swal({
+          title: "Incorrecto!",
+          text: "Vuelve a intentarlo",
+          icon: "error"})
+    }
+  </script>
+  <Form name="MyForm">
+    <center>
+
+      <h2><strong>
+          <font color=#2632EF>¡COMENCEMOS POR ALGO SIMPLE!</font>
+        </strong></h2>
+      <img src="/img/pentagono.jpg" class="rounded" width="250" height="250" border="0" align="center"><br><br>
+
+      <div class="info">
+        <p class="e3">¿Cuál es el nombre de la figura?</p>
+      </div>
+      <input type="button" id="boton1" value="A. CUADRADO" onclick="respuestano()">
+      <input type="button" id="boton2" value="B. PENTÁGONO" onclick="respuestasi()"><br><br>
+      <input type="button" id="boton3" value="C. HEXÁGONO" onclick="respuestano()">
+      <input type="button" id="boton4" value="D. ÓVALO" onclick="respuestano()"><br><br>
+    </center>
+  </Form>
+</body>
+
+</html>

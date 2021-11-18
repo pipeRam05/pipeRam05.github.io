@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM05</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+</head>
+<body>
+    <script>
+      function respuestasi() {
+        
+        swal({
+            title: "",
+            text: "¿Quieres regresar a la página principal?",
+            icon: 'info',
+            width: '5%',
+            buttons: [
+              'No',
+              'Si, regresar!'
+            ],
+            dangerMode: false,
+          }).then(function(isConfirm) {
+            if (isConfirm) {
+                window.location.href ="index.html";
+                form.submit();
+            
+            } else {
+              window.location.href ="final.html";
+            }
+          });
+      }
+    </script>
+
+    <Form name="MyForm">
+      <center>
+        <h2><strong>
+            <font color= #2632EF >¡TERMINASTE TODAS LAS PRUEBAS!</font>
+          </strong></h2>
+          <h2 class="e1"> MÁXIMA PUNTUACIÓN  :) </h2>
+        <img src="/img/final.jpg" class="rounded" width="35%" height="250" border="5px; color: black;" align="center"><br><br>
+        
+        <input type="button" id="botonSolo" value="  VOLVER AL INICIO  " onclick="respuestasi()">
+        
+      </center>
+    </Form>
+
+    <script> src = "js/bootstrap.min.js" </script>
+    <script> src = "http://code.jquery.com/jquery.js" </script>
+    <script src="js/sweetalert.min.js"></script>
+</body>
+</html>
